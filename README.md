@@ -6,6 +6,8 @@
 
 # Star Tech Data Consulting
 ![LOGO3](startech.png)
+
+
 En el competitivo mercado de los restaurantes y negocios relacionados con el ocio y turismo en los Estados Unidos, la opinión de los usuarios es una fuente clave de información para el crecimiento y la adaptación de los comercios. Nuestro equipo de profesionales Startech, ha sido contratado por un cliente del sector para realizar un análisis exhaustivo del comportamiento del mercado.
 
 
