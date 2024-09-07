@@ -39,9 +39,9 @@ Para llevar a cabo los objetivos se realizó un análisis prelimiar del comporta
 
 
 
-![yelp1](imagenes/tiempo_review_yelp.jpeg)
+![yelp1](tiempo_review_yelp.jpeg)
 
-![yelp2](imagenes/top_20_categorias_bus.png)
+![yelp2](top_20_categorias_bus.png)
 
 
 
