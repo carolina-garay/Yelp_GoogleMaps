@@ -78,3 +78,12 @@ Mide el número de reseñas positivas (4 o 5 estrellas) en un área geográfica 
 
 KPI :four: : **Índice de Mejora de Rating (IMR)**
 Mide el progreso del rating promedio de un local en plataformas como Google Maps y Yelp
+
+## ​Alcances del Proyecto
+* Establecemos como negocios objetivo el del  ámbito gastronómico, categorizados como ‘Restaurantes’, ‘Breakfast & Brunch’, ‘Sandwiches’, ‘Coffee & Tea’, ‘Bars’, etc.
+* Utilizamos como fuentes de  información las reseñas de Yelp y Google Map, así como también información externa.
+* Se tendrán en cuenta las reseñas generadas desde el año 2019 en adelante
+* Nos centramos en Estados Unidos, principalmente  en todos los estados que presenten mayor cantidad de reseñas (sin importar el tipo) y mayor valor de PBI per cápita
+
+## ​Stack Tecnológico y Pipeline
+
