@@ -86,4 +86,4 @@ Mide el progreso del rating promedio de un local en plataformas como Google Maps
 * Nos centramos en Estados Unidos, principalmente  en todos los estados que presenten mayor cantidad de reseñas (sin importar el tipo) y mayor valor de PBI per cápita
 
 ## ​Stack Tecnológico y Pipeline
-![p1](pipeline.jpeg)
+![p1](pipeline2.jpeg)
