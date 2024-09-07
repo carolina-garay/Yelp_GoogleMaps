@@ -1,9 +1,8 @@
 # <h1 align="center">**`YELP & GOOGLE MAPS - REVIEWS AND RECOMMENDATIONS`**</h1>
 
-#
 
-![LOGO1](yelp.png)
-![LOGO2](Google_maps.png)
+
+
 
 # Star Tech Data Consulting
 ![LOGO3](startech.png)
