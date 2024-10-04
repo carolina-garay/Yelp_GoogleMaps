@@ -73,6 +73,10 @@ def mostrar_progreso(mensaje):
     with st.spinner(mensaje):
         time.sleep(1)
 
+# Generar nubes de palabras
+def generar_nube_palabras(texto, color):
+    wordcloud = WordCloud(width=800, height=400, background_color='white', colormap=color).generate(texto)
+    return wordcloud
 
 # Función para inicializar el analizador de sentimiento
 sia = SentimentIntensityAnalyzer()
