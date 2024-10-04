@@ -43,7 +43,7 @@ def cargar_datos_bigquery():
 df = cargar_datos_bigquery()
 
 # Cargar la clave de la API de OpenAI desde secrets
-openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
+#openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
 # Definir los límites de latitud y longitud para cada estado
 state_filters = {
     'CA': (34.0, 34.6, -120.0, -119.0),  # California
