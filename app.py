@@ -24,8 +24,7 @@ pagina = st.sidebar.selectbox("Selecciona una página", ["Recomendación de Nego
 
 # Cargar credenciales de Google Cloud desde secrets
 credentials = service_account.Credentials.from_service_account_info(
-    st.secrets["google_cloud_credentials"]
-)
+    st.secrets["google_cloud_credentials"])
 
 # Cargar la clave de la API de OpenAI desde secrets
 openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
