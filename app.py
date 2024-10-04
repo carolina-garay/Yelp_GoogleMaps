@@ -28,7 +28,7 @@ credentials = service_account.Credentials.from_service_account_info(
     st.secrets["google_cloud_credentials"])
 
 # Cargar la clave de la API de OpenAI desde secrets
-openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
+#openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
 
 # Crear cliente de BigQuery usando las credenciales cargadas
 client = bigquery.Client(credentials=credentials, project=credentials.project_id)
