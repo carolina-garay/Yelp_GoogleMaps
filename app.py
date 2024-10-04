@@ -21,13 +21,13 @@ def mostrar_dashboard():
 st.sidebar.title("Navegación")
 pagina = st.sidebar.selectbox("Seleccione una página", ["Dashboard de Power BI", "Sistema de Recomendación de Negocios"])
 
-
 # Cargar credenciales y datos de BigQuery
 @st.cache_data(show_spinner=False)
 def cargar_datos_bigquery():
     # Cargar credenciales de Google Cloud desde secrets
     credentials = service_account.Credentials.from_service_account_info(
-        st.secrets["google_cloud_credentials"])
+        st.secrets["google_cloud_credentials"]
+    )
 
     # Crear cliente de BigQuery usando las credenciales cargadas
     client = bigquery.Client(credentials=credentials, project=credentials.project_id)
@@ -44,13 +44,14 @@ df = cargar_datos_bigquery()
 
 # Cargar la clave de la API de OpenAI desde secrets
 #openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
+
 # Definir los límites de latitud y longitud para cada estado
 state_filters = {
     'CA': (34.0, 34.6, -120.0, -119.0),  # California
     'FL': (27.0, 29.0, -83.0, -82.0),    # Florida
     'IL': (38.0, 39.5, -91.0, -89.0),    # Illinois
     'NY': (38.5, 41.0, -76.0, -74.0)     # New York
-    }
+}
 
 # Función para filtrar por estado
 def filtrar_por_estado(df, estado_cliente):
@@ -94,7 +95,7 @@ def mostrar_recomendacion():
     <h1 class="centered-title">Sistema de Recomendación de Negocios</h1>
     """, unsafe_allow_html=True)
 
-# Agregar imagen debajo del título
+    # Agregar imagen debajo del título
     st.image("kitchen_henry.png", width=200)
     st.write("Seleccione el estado y la categoría para obtener recomendaciones basadas en las reseñas de usuarios.")
 
@@ -102,10 +103,13 @@ def mostrar_recomendacion():
     estado_cliente = st.selectbox("Seleccione el estado", ['CA', 'FL', 'IL', 'NY'], key="estado_recomendacion")
     categoria_cliente = st.text_input("Ingrese la categoría que desea buscar", key="categoria_recomendacion")
 
+    # Preservar el estado de la búsqueda usando st.session_state
     if st.button('Buscar negocios', key="buscar_recomendacion"):
+        st.session_state["buscar"] = True
+
+    if st.session_state.get("buscar", False):
         mostrar_progreso("Cargando datos...")
 
-        
         # Filtrar los datos por estado
         df_filtrado_estado = filtrar_por_estado(df, estado_cliente)
 
@@ -180,6 +184,7 @@ def mostrar_recomendacion():
                 plt.imshow(wordcloud_negativas, interpolation="bilinear")
                 plt.axis("off")
                 st.pyplot(plt)
+
                 # Enviar las sugerencias de los usuarios a GPT-4 para generar recomendaciones
                 prompt = f"""
                 Sugerencias de los usuarios:
