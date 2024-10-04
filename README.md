@@ -80,10 +80,11 @@ Mide el progreso del rating promedio de un local en plataformas como Google Maps
 
 
 ## :white_check_mark: ```Machine Learning ```
-El sistema de recomendación junto al dashboard se han implementado en **Streamlit** y se encuentran en la dirección ![https://kitchenhat24.streamlit.app/]
+El sistema de recomendación junto al dashboard se han implementado en **Streamlit** y se encuentran en la dirección [https://kitchenhat24.streamlit.app/](https://kitchenhat24.streamlit.app/)
 
 
 ## :white_check_mark: ```Dashboard ```
-El Dashboard completo en formato pdf se encuentra en la carpeta ![Dashboard]
+El Dashboard completo en formato pdf se encuentra en la carpeta [Dashboard](Dashboard)
 
 ![d1](imagenes/dashboard.png)
+
