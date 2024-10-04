@@ -43,7 +43,7 @@ def cargar_datos_bigquery():
 df = cargar_datos_bigquery()
 
 # Cargar la clave de la API de OpenAI desde secrets
-#openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
+openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
 
 # Definir los límites de latitud y longitud para cada estado
 state_filters = {
@@ -99,16 +99,22 @@ def mostrar_recomendacion():
     st.image("kitchen_henry.png", width=200)
     st.write("Seleccione el estado y la categoría para obtener recomendaciones basadas en las reseñas de usuarios.")
 
-    # Pedir al cliente que ingrese el estado y la categoría
+    # Pedir al cliente que ingrese el estado
     estado_cliente = st.selectbox("Seleccione el estado", ['CA', 'FL', 'IL', 'NY'], key="estado_recomendacion")
-    categoria_cliente = st.text_input("Ingrese la categoría que desea buscar", ['restaurant', 'coffee', 'ice cream', 'cocktal bars','wine bars',
-              'sushi bars', 'tea','bakery', 'food'], key="categoria_recomendacion")
-
+    
+    # Agregar las categorías que mencionas como un selectbox
+    categorias =  ['restaurant', 'coffee', 'ice cream', 'cocktal bars','wine bars',
+              'sushi bars', 'tea','bakery', 'food', 'diner','tortilla',
+          'vegetarian''tofu', 'pie', 'soup', 'salad', 'cake', 'donut',
+              'sandwiches','pizza', 'burguer', 'hot dog',
+              'breakfast & brunch', 'restaurants','barbeque']
+    categoria_cliente = st.selectbox("Seleccione la categoría", categorias, key="categoria_recomendacion")
+    
     # Preservar el estado de la búsqueda usando st.session_state
     if st.button('Buscar negocios', key="buscar_recomendacion"):
         st.session_state["buscar"] = True
-
-    if st.session_state.get("buscar", False):
+    
+    if st.button('Buscar negocios', key="buscar_recomendacion"):
         mostrar_progreso("Cargando datos...")
 
         # Filtrar los datos por estado
@@ -185,10 +191,9 @@ def mostrar_recomendacion():
                 plt.imshow(wordcloud_negativas, interpolation="bilinear")
                 plt.axis("off")
                 st.pyplot(plt)
-                ##comento para no gastar el crédito
+
                 # Enviar las sugerencias de los usuarios a GPT-4 para generar recomendaciones
-                
-                """prompt = f"""
+                #prompt = f"""
                 #Sugerencias de los usuarios:
                 #Mejores negocios:
                 #{mejores_tips}
