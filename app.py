@@ -102,10 +102,7 @@ def mostrar_recomendacion():
     # Pedir al cliente que ingrese el estado y la categoría
     estado_cliente = st.selectbox("Seleccione el estado", ['CA', 'FL', 'IL', 'NY'], key="estado_recomendacion")
     categoria_cliente = st.text_input("Ingrese la categoría que desea buscar", ['restaurant', 'coffee', 'ice cream', 'cocktal bars','wine bars',
-              'sushi bars', 'tea','bakery', 'food', 'diner','tortilla',
-          'vegetarian','tofu', 'pie', 'soup', 'salad', 'cake', 'donut',
-              'sandwiches','pizza', 'burguer', 'hot dog',
-              'breakfast & brunch', 'restaurants','barbeque'], key="categoria_recomendacion")
+              'sushi bars', 'tea','bakery', 'food'], key="categoria_recomendacion")
 
     # Preservar el estado de la búsqueda usando st.session_state
     if st.button('Buscar negocios', key="buscar_recomendacion"):
