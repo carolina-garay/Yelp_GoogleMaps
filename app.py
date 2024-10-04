@@ -68,18 +68,15 @@ def filtrar_por_estado(df, estado_cliente):
         st.write(f"Estado '{estado_cliente}' no reconocido.")
         return pd.DataFrame()  # Retornar DataFrame vacío si el estado no se reconoce
 
-# Generar nubes de palabras
-def generar_nube_palabras(texto, color):
-    wordcloud = WordCloud(width=800, height=400, background_color='white', colormap=color).generate(texto)
-    return wordcloud
+# Función para mostrar progreso
+def mostrar_progreso(mensaje):
+    with st.spinner(mensaje):
+        time.sleep(1)
+
 
 # Función para inicializar el analizador de sentimiento
 sia = SentimentIntensityAnalyzer()
 
-# Mostrar barra de progreso
-def mostrar_progreso(mensaje):
-    with st.spinner(mensaje):
-        time.sleep(1)
 
 # Mostrar la interfaz de usuario
 def mostrar_recomendacion():
