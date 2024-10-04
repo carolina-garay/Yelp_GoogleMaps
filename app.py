@@ -103,7 +103,7 @@ def mostrar_recomendacion():
     estado_cliente = st.selectbox("Seleccione el estado", ['CA', 'FL', 'IL', 'NY'], key="estado_recomendacion")
     
     # Agregar las categorías que mencionas como un selectbox
-    categorias =  ['restaurant', 'coffee', 'ice cream', 'cocktal bars','wine bars',
+    categorias =  ['restaurant', 'coffee', 'ice cream', 'cocktail bars','wine bars',
               'sushi bars', 'tea','bakery', 'food', 'diner','tortilla',
           'vegetarian''tofu', 'pie', 'soup', 'salad', 'cake', 'donut',
               'sandwiches','pizza', 'burguer', 'hot dog',
