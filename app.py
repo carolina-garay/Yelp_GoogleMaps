@@ -79,7 +79,6 @@ def generar_nube_palabras(texto, color):
 # Función para inicializar el analizador de sentimiento
 sia = SentimentIntensityAnalyzer()
 
-
 # Mostrar la interfaz de usuario
 def mostrar_recomendacion():
     # Título de la aplicación en Streamlit
@@ -181,7 +180,6 @@ def mostrar_recomendacion():
                 plt.imshow(wordcloud_negativas, interpolation="bilinear")
                 plt.axis("off")
                 st.pyplot(plt)
-
                 # Enviar las sugerencias de los usuarios a GPT-4 para generar recomendaciones
                 prompt = f"""
                 Sugerencias de los usuarios:
