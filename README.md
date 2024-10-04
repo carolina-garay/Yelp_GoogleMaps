@@ -1,11 +1,11 @@
 
 
-## <h1 align="center">**`Star Tech Data Consulting`**</h1>
+# <h1 align="center">**`Star Tech Data Consulting`**</h1>
 
 
 
 
-# YELP & GOOGLE MAPS - REVIEWS AND RECOMMENDATIONS
+## YELP & GOOGLE MAPS - REVIEWS AND RECOMMENDATIONS
 
 ![LOGO3](imagenes/startech.png)
 
@@ -24,7 +24,7 @@ Nuestro cliente es un grupo empresarial de prestigio en el sector de Restaurante
 Nuestro objetivo es proporcionar insights valiosos mediante el cruce de reseñas de usuarios en plataformas como Yelp y Google Maps, enfocándonos en restaurantes en general, lugares específicos que ofrezcan desayunos-meriendas, almuerzos rápidos como sánguches y también bares para el ocio nocturno
 
 
-## :✅: ```Objetivos Específicos ```
+## :white_check_mark: ```Objetivos Específicos ```
 
 :green_circle: Análisis de Opiniones y Sentimientos: Aplicar técnicas de procesamiento de lenguaje natural (NLP) a las reseñas de Yelp y Google Maps para evaluar la percepción de los clientes sobre los negocios en el ámbito gastronómico en Estados Unidos.
 
@@ -34,7 +34,7 @@ Nuestro objetivo es proporcionar insights valiosos mediante el cruce de reseñas
 
 :green_circle: Desarrollo de un Sistema de Recomendación: Crear un sistema de recomendación para usuarios de Yelp y Google Maps, que les sugiera locales gastronómicos, ajustado a sus gustos y experiencias anteriores.
 
-## ​Alcances del Proyecto
+## :white_check_mark: ​Alcances del Proyecto
 * Establecemos como negocios objetivo el del  ámbito gastronómico, categorizados como ‘Restaurantes’, ‘Breakfast & Brunch’, ‘Sandwiches’, ‘Coffee & Tea’, ‘Bars’, etc.
 * Utilizamos como fuentes de  información las reseñas de Yelp y Google Map, así como también información externa.
 * Se tendrán en cuenta las reseñas generadas desde el año 2019 en adelante
