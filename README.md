@@ -44,11 +44,11 @@ Nuestro objetivo es proporcionar insights valiosos mediante el cruce de reseñas
 ## :white_check_mark: ```Desarrollo del Proyecto```
 
 
-- Sprint Nro :one: : Durante este sprint se realizó un análisis prelimiar del comportamiento de los datos provenientes de Yelp y Google Maps. Este análisis se centró especialmente en el las reseñas y ubicaciones de negocios. Se utilizaron diversas técnicas de Análisis Exploratorio de Datos (EDA) para identificar valores faltantes, detectar valores atípicos y registros duplicados, y generar visualizaciones coherentes que faciliten la interpretación de la información. También se estableció el stack tecnológico y se definieron los KPIs.
+- Sprint Nro 1: Durante este sprint se realizó un análisis prelimiar del comportamiento de los datos provenientes de Yelp y Google Maps. Este análisis se centró especialmente en el las reseñas y ubicaciones de negocios. Se utilizaron diversas técnicas de Análisis Exploratorio de Datos (EDA) para identificar valores faltantes, detectar valores atípicos y registros duplicados, y generar visualizaciones coherentes que faciliten la interpretación de la información. También se estableció el stack tecnológico y se definieron los KPIs.
 
-- Sprint Nro :two: : En esta etapa de Data Engineering se trabajó en forma exhaustiva en la plataforma de Google Cloud, se generaron los buckes necesarios para el almacenamiento de los datos así como la funcíon para las transformaciones corresppndientes.
+- Sprint Nro 2: En esta etapa de Data Engineering se trabajó en forma exhaustiva en la plataforma de Google Cloud, se generaron los buckes necesarios para el almacenamiento de los datos así como la función para las transformaciones correspondientes.
 
-- Sprint Nro :three: :
+- Sprint Nro 3:
 
 
 ## 🏆 Indicadores Claves de Rendimiento (KPIs)
@@ -59,8 +59,6 @@ KPI :one: : **Tasa de Crecimiento de Nuevas Reseñas (TCNR)**
 Calcula la tasa de aumento en la cantidad de reseñas (de cualquier tipo) en un periodo de tiempo.
 
 
-
-  
 
 KPI :two: : **Índice de Oportunidades de Mejora (IOM)**
 
@@ -88,3 +86,12 @@ El Dashboard completo en formato pdf se encuentra en la carpeta [Dashboard](Dash
 
 ![d1](imagenes/dashboard.png)
 
+## :white_check_mark: ```Resultados y Conclusiones```
+
+- El sistema de recomendación desarrollado ofrece varias funcionalidades que permiten al cliente explorar y analizar los negocios en los 4 estados de Estados Unidos. Basándose en reseñas de usuario se realiza un análisis de sentimiento basado tilizando la librería VADER, se calculan los puntajes de sentimiento y se  clasifican los negocios según las mejores y peores reseñas. Esto permite identificar tanto los negocios con opiniones más positivas como aquellos que tienen reseñas negativas.
+
+- El sistema muestra un mapa interactivo que destaca los 5 mejores y 5 peores negocios según el análisis de sentimiento. Los mejores negocios se marcan en verde y los peores en rojo. Además, los 5 peores negocios tienen un círculo azul de 500 metros alrededor para indicar su área de influencia.
+
+- Se genera una visualización en forma de nube de palabras para los comentarios tipo "tip" positivos y negativos de los negocios. Las nubes de palabras usan una paleta verde para los comentarios positivos y una roja para los negativos. Esto ayuda a identificar patrones comunes y palabras clave que aparecen en las reseñas de los usuarios.
+
+- El sistema permite generar un plan de acción basado en las reseñas de los usuarios, utilizando la API de OpenAI GPT-4. Basándose en las palabras clave de las reseñas positivas y negativas, se pide a la IA que sugiera tres acciones concretas para mejorar o implementar un nuevo negocio.
