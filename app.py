@@ -23,15 +23,28 @@ pagina = st.sidebar.selectbox("Seleccione una página", ["Dashboard de Power BI"
 
 
 
-# Cargar credenciales de Google Cloud desde secrets
-credentials = service_account.Credentials.from_service_account_info(
-    st.secrets["google_cloud_credentials"])
-
 # Cargar la clave de la API de OpenAI desde secrets
 #openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
 
-# Crear cliente de BigQuery usando las credenciales cargadas
-client = bigquery.Client(credentials=credentials, project=credentials.project_id)
+# Cargar credenciales y datos de BigQuery
+@st.cache_data(show_spinner=False)
+def cargar_datos_bigquery():
+    # Cargar credenciales de Google Cloud desde secrets
+    credentials = service_account.Credentials.from_service_account_info(
+        st.secrets["google_cloud_credentials"])
+
+    # Crear cliente de BigQuery usando las credenciales cargadas
+    client = bigquery.Client(credentials=credentials, project=credentials.project_id)
+
+    query = """
+        SELECT *
+        FROM `data-avatar-435301-p6.Yelp.review_mach_learn_table`
+    """
+    df = client.query(query).to_dataframe()
+    return df
+
+# Optimización: Cargar los datos solo una vez
+df = cargar_datos_bigquery()
 
 # Definir los límites de latitud y longitud para cada estado
 state_filters = {
@@ -39,17 +52,7 @@ state_filters = {
     'FL': (27.0, 29.0, -83.0, -82.0),    # Florida
     'IL': (38.0, 39.5, -91.0, -89.0),    # Illinois
     'NY': (38.5, 41.0, -76.0, -74.0)     # New York
-}
-
-# Optimización: Cargar datos desde BigQuery con caché para evitar recargas repetitivas
-@st.cache_data(show_spinner=False)
-def cargar_datos_desde_bigquery():
-    query = """
-        SELECT *
-        FROM `data-avatar-435301-p6.Yelp.review_mach_learn_table`
-    """
-    df = client.query(query).to_dataframe()
-    return df
+    }
 
 # Función para filtrar por estado
 def filtrar_por_estado(df, estado_cliente):
@@ -104,9 +107,7 @@ def mostrar_recomendacion():
     if st.button('Buscar negocios', key="buscar_recomendacion"):
         mostrar_progreso("Cargando datos...")
 
-        # Cargar datos desde BigQuery
-        df = cargar_datos_desde_bigquery()
-
+        
         # Filtrar los datos por estado
         df_filtrado_estado = filtrar_por_estado(df, estado_cliente)
 
