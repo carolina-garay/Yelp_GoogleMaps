@@ -22,10 +22,6 @@ st.sidebar.title("Navegación")
 pagina = st.sidebar.selectbox("Seleccione una página", ["Dashboard de Power BI", "Sistema de Recomendación de Negocios"])
 
 
-
-# Cargar la clave de la API de OpenAI desde secrets
-#openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
-
 # Cargar credenciales y datos de BigQuery
 @st.cache_data(show_spinner=False)
 def cargar_datos_bigquery():
@@ -46,6 +42,8 @@ def cargar_datos_bigquery():
 # Optimización: Cargar los datos solo una vez
 df = cargar_datos_bigquery()
 
+# Cargar la clave de la API de OpenAI desde secrets
+openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
 # Definir los límites de latitud y longitud para cada estado
 state_filters = {
     'CA': (34.0, 34.6, -120.0, -119.0),  # California
