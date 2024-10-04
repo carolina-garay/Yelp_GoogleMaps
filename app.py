@@ -95,7 +95,7 @@ def mostrar_recomendacion():
 
 # Agregar imagen debajo del título
     st.image("kitchen_henry.png", width=200)
-    st.write("Seleccione el estado y la categoría para obtener recomendaciones basadas en las reseñas de Yelp.")
+    st.write("Seleccione el estado y la categoría para obtener recomendaciones basadas en las reseñas de usuarios.")
 
     # Pedir al cliente que ingrese el estado y la categoría
     estado_cliente = st.selectbox("Seleccione el estado", ['CA', 'FL', 'IL', 'NY'], key="estado_recomendacion")
