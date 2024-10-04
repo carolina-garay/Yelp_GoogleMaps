@@ -11,17 +11,6 @@ import matplotlib.pyplot as plt
 import openai
 import time
 
-import streamlit as st
-import pandas as pd
-import folium
-from sklearn.feature_extraction.text import TfidfVectorizer
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from google.cloud import bigquery
-from google.oauth2 import service_account
-from streamlit_folium import folium_static
-import openai
-import time
-
 # Mostrar el dashboard de Power BI
 def mostrar_dashboard():
     st.title("Dashboard de Power BI")
@@ -36,8 +25,7 @@ pagina = st.sidebar.selectbox("Seleccione una página", ["Dashboard de Power BI"
 
 # Cargar credenciales de Google Cloud desde secrets
 credentials = service_account.Credentials.from_service_account_info(
-    st.secrets["google_cloud_credentials"]
-)
+    st.secrets["google_cloud_credentials"])
 
 # Cargar la clave de la API de OpenAI desde secrets
 openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
