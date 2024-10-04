@@ -1,4 +1,3 @@
-# app.py
 import streamlit as st
 import pandas as pd
 import folium
@@ -10,23 +9,17 @@ from streamlit_folium import st_folium
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import openai
-from dotenv import load_dotenv 
-import os
 
-# Cargar las variables de entorno desde el archivo .env
-load_dotenv()
+# Cargar credenciales de Google Cloud desde secrets
+credentials = service_account.Credentials.from_service_account_info(
+    st.secrets["google_cloud_credentials"]
+)
 
-# Obtener las claves desde las variables de entorno
-openai.api_key = os.getenv("OPENAI_API_KEY")
-credential_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+# Cargar la clave de la API de OpenAI desde secrets
+openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
 
-# Configurar la API de OpenAI con la clave de entorno
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-# Cargar las credenciales explícitamente
-credentials = service_account.Credentials.from_service_account_file(credential_path)
-client = bigquery.Client(credentials=credentials, project="data-avatar-435301-p6")
-
+# Crear cliente de BigQuery usando las credenciales cargadas
+client = bigquery.Client(credentials=credentials, project=credentials.project_id)
 
 # Definir los límites de latitud y longitud para cada estado
 state_filters = {
@@ -175,7 +168,7 @@ if estado_cliente and categoria_cliente:
         Peores negocios:
         {peores_tips}
 
-        Basado en estas sugerencias, por favor recomienda un plan de acción para mejorar o implementar un nuevo negocio.Deben ser 3 items bien resumidos
+        Basado en estas sugerencias, por favor recomienda un plan de acción de 3 ítems resumidos para mejorar o implementar un nuevo negocio.
         """
 
         # Llamar a OpenAI GPT-4 para generar recomendaciones
