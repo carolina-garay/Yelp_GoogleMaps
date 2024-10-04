@@ -26,7 +26,7 @@ Nuestro objetivo es proporcionar insights valiosos mediante el cruce de reseñas
 
 ## :white_check_mark: ```Objetivos Específicos ```
 
-- :pushpin: Análisis de Opiniones y Sentimientos: Aplicar técnicas de procesamiento de lenguaje natural (NLP) a las reseñas de Yelp y Google Maps para evaluar la percepción de los clientes sobre los negocios en el ámbito gastronómico en Estados Unidos.
+- :red_circle: Análisis de Opiniones y Sentimientos: Aplicar técnicas de procesamiento de lenguaje natural (NLP) a las reseñas de Yelp y Google Maps para evaluar la percepción de los clientes sobre los negocios en el ámbito gastronómico en Estados Unidos.
 - :pushpin: Identificación de Ubicaciones para Nuevos Negocios: Implementar un modelo de machine learning para determinar las ubicaciones geográficas óptimas para abrir nuevos negocios relacionados con el ámbito gastronómico, tomando en cuenta factores como la cantidad de reseñas positivas y datos demográficos.
 
 - :pushpin: Predicción de Tendencias en Negocios: Emplear algoritmos de machine learning para anticipar qué categorías de negocios dentro del sector experimentarán crecimiento o declive, utilizando datos históricos de reseñas y calificaciones.
@@ -43,11 +43,11 @@ Nuestro objetivo es proporcionar insights valiosos mediante el cruce de reseñas
 ## :white_check_mark: ```Desarrollo del Proyecto```
 
 
-- :pushpin:Sprint Nro :one: : Durante este sprint se realizó un análisis prelimiar del comportamiento de los datos provenientes de Yelp y Google Maps. Este análisis se centró especialmente en el las reseñas y ubicaciones de negocios. Se utilizaron diversas técnicas de Análisis Exploratorio de Datos (EDA) para identificar valores faltantes, detectar valores atípicos y registros duplicados, y generar visualizaciones coherentes que faciliten la interpretación de la información. También se estableció el stack tecnológico y se definieron los KPIs.
+- Sprint Nro :one: : Durante este sprint se realizó un análisis prelimiar del comportamiento de los datos provenientes de Yelp y Google Maps. Este análisis se centró especialmente en el las reseñas y ubicaciones de negocios. Se utilizaron diversas técnicas de Análisis Exploratorio de Datos (EDA) para identificar valores faltantes, detectar valores atípicos y registros duplicados, y generar visualizaciones coherentes que faciliten la interpretación de la información. También se estableció el stack tecnológico y se definieron los KPIs.
 
-- :pushpin:Sprint Nro2: En esta etapa de Data Engineering se trabajó en forma exhaustiva en la plataforma de Google Cloud, se generaron los buckes necesarios para el almacenamiento de los datos así como la funcíon para las transformaciones corresppndientes.
+- Sprint Nro :two: : En esta etapa de Data Engineering se trabajó en forma exhaustiva en la plataforma de Google Cloud, se generaron los buckes necesarios para el almacenamiento de los datos así como la funcíon para las transformaciones corresppndientes.
 
-- :pushpin:Sprint Nro3:
+- Sprint Nro :three: :
 
 
 ## 🏆 Indicadores Claves de Rendimiento (KPIs)
