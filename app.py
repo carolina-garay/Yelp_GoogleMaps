@@ -168,10 +168,10 @@ def mostrar_recomendacion():
 
                 # Mostrar las tablas de los mejores y peores negocios
                 st.write("Mejores negocios:")
-                st.write(df_pos[['name', 'sentiment_score', 'stars', 'latitude', 'longitude', 'state']])
+                st.write(df_pos[['name', 'category', 'sentiment_score', 'stars', 'latitude', 'longitude', 'state']])
 
                 st.write("Peores negocios:")
-                st.write(df_neg[['name', 'sentiment_score', 'stars', 'latitude', 'longitude', 'state']])
+                st.write(df_neg[['name', 'category', 'sentiment_score', 'stars', 'latitude', 'longitude', 'state']])
 
                 # Generar nubes de palabras para los comentarios
                 mejores_tips = ' '.join(df_pos['text'].dropna())
