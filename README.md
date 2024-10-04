@@ -77,3 +77,12 @@ Mide el progreso del rating promedio de un local en plataformas como Google Maps
 
 ## ​Stack Tecnológico y Pipeline
 ![p1](imagenes/pipeline2.jpeg)
+
+
+## :white_check_mark: ```Machine Learning ```
+
+
+
+
+## :white_check_mark: ```Dashboard ```
+![d1](imagenes/dashboard.png)
