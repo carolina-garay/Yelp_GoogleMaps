@@ -26,7 +26,7 @@ Nuestro objetivo es proporcionar insights valiosos mediante el cruce de reseñas
 
 ## :white_check_mark: ```Objetivos Específicos ```
 
-- :black_circle: Análisis de Opiniones y Sentimientos: Aplicar técnicas de procesamiento de lenguaje natural (NLP) a las reseñas de Yelp y Google Maps para evaluar la percepción de los clientes sobre los negocios en el ámbito gastronómico en Estados Unidos.
+:green_circle: Análisis de Opiniones y Sentimientos: Aplicar técnicas de procesamiento de lenguaje natural (NLP) a las reseñas de Yelp y Google Maps para evaluar la percepción de los clientes sobre los negocios en el ámbito gastronómico en Estados Unidos.
 - :pushpin: Identificación de Ubicaciones para Nuevos Negocios: Implementar un modelo de machine learning para determinar las ubicaciones geográficas óptimas para abrir nuevos negocios relacionados con el ámbito gastronómico, tomando en cuenta factores como la cantidad de reseñas positivas y datos demográficos.
 
 - :pushpin: Predicción de Tendencias en Negocios: Emplear algoritmos de machine learning para anticipar qué categorías de negocios dentro del sector experimentarán crecimiento o declive, utilizando datos históricos de reseñas y calificaciones.
