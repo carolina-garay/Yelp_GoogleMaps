@@ -97,7 +97,7 @@ def mostrar_recomendacion():
 
     # Agregar imagen debajo del título
     st.image("kitchen_henry.png", width=200)
-    st.write("Seleccione el estado y la categoría para obtener recomendaciones basadas en las reseñas de usuarios.")
+    st.write("Seleccione el estado y la categoría para obtener recomendaciones basadas en reseñas de usuarios.")
 
     # Pedir al cliente que ingrese el estado
     estado_cliente = st.selectbox("Seleccione el estado", ['CA', 'FL', 'IL', 'NY'], key="estado_recomendacion")
@@ -216,7 +216,7 @@ def mostrar_recomendacion():
                     )
 
                     # Mostrar las recomendaciones generadas por GPT-4
-                    st.write("Plan de acción recomendado para el nuevo negocio:")
+                    st.write("Plan de acción recomendado para el nuevo negocio genrado por IA:")
                     st.write(response['choices'][0]['message']['content'])
 
                 except openai.error.RateLimitError:
