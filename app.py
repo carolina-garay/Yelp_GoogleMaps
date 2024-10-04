@@ -113,8 +113,8 @@ def mostrar_recomendacion():
     # Preservar el estado de la búsqueda usando st.session_state
     if st.button('Buscar negocios', key="buscar_recomendacion"):
         st.session_state["buscar"] = True
-    
-    if st.button('Buscar negocios', key="buscar_recomendacion"):
+
+    if st.session_state.get("buscar", False):
         mostrar_progreso("Cargando datos...")
 
         # Filtrar los datos por estado
