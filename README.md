@@ -24,9 +24,10 @@ Nuestro cliente es un grupo empresarial de prestigio en el sector de Restaurante
 Nuestro objetivo es proporcionar insights valiosos mediante el cruce de reseñas de usuarios en plataformas como Yelp y Google Maps, enfocándonos en restaurantes en general, lugares específicos que ofrezcan desayunos-meriendas, almuerzos rápidos como sánguches y también bares para el ocio nocturno
 
 
-## :white_check_mark: ```Objetivos Específicos ```
+## :red_check_mark: ```Objetivos Específicos ```
 
 :green_circle: Análisis de Opiniones y Sentimientos: Aplicar técnicas de procesamiento de lenguaje natural (NLP) a las reseñas de Yelp y Google Maps para evaluar la percepción de los clientes sobre los negocios en el ámbito gastronómico en Estados Unidos.
+
 :green_circle: Identificación de Ubicaciones para Nuevos Negocios: Implementar un modelo de machine learning para determinar las ubicaciones geográficas óptimas para abrir nuevos negocios relacionados con el ámbito gastronómico, tomando en cuenta factores como la cantidad de reseñas positivas y datos demográficos.
 
 :green_circle: Predicción de Tendencias en Negocios: Emplear algoritmos de machine learning para anticipar qué categorías de negocios dentro del sector experimentarán crecimiento o declive, utilizando datos históricos de reseñas y calificaciones.
