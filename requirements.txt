@@ -1,0 +1,14 @@
+streamlit  # Asegúrate de que esta versión sea compatible con tu entorno
+pandas
+folium
+scikit-learn  # Para TfidfVectorizer
+vaderSentiment # Para análisis de sentimiento
+google-cloud-bigquery
+google-auth
+google-auth-oauthlib
+streamlit-folium  # Para mostrar mapas de Folium en Streamlit
+wordcloud
+matplotlib
+openai==0.28.0 # Usar la versión estable de la API de OpenAI
+python-dotenv  # Para manejar variables de entorno
+db-dtypes
