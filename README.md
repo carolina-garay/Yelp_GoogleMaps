@@ -85,6 +85,6 @@ Mide el progreso del rating promedio de un local en plataformas como Google Maps
 
 
 ## :white_check_mark: ```Dashboard ```
-El Dashboard completo se encuentra en la carpeta ![Dashboard](Dashboard)
+El Dashboard completo en formato pdf se encuentra en la carpeta (Dashboard)
 
 ![d1](imagenes/dashboard.png)
