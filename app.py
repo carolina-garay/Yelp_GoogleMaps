@@ -212,7 +212,7 @@ def mostrar_recomendacion():
                             {"role": "system", "content": "Eres un experto en negocios y marketing."},
                             {"role": "user", "content": prompt}
                         ],
-                        max_tokens=200  # Limitar la respuesta para que no sea demasiado larga
+                        max_tokens=500  # Limitar la respuesta para que no sea demasiado larga
                     )
 
                     # Mostrar las recomendaciones generadas por GPT-4
