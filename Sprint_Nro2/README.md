@@ -86,15 +86,13 @@ De esta manera, se ha automatizado todo el flujo de trabajo ETL: desde la carga 
 > - **Carga (Load):** Los datos limpios se cargan automáticamente en BigQuery para análisis y consultas.
 ## ✅ ```Relacionamiento de Tablas```
 
-</p>
-</p>
 
 ![Relación](imagenes/relaciones.png)
 
-</p>
+
 
 ## ✅ ```Dashboard Mockup```
-  </p>
+  
 El dashboard se realizará en 📊 `Power BI` 📊 y tendrá el siguiente esquema:
 
 **1. Página de Inicio:** Presenta el menú principal del Dashboard con sus respectivos links de acceso a cada página. </p>
@@ -117,6 +115,6 @@ Para el modelo de recomendación se utilizará Machine Learning, especificamente
 
 La similitud del :atom: coseno :atom: mide qué tan similares son dos elementos basándose en sus características. En lugar de mirar las diferencias o similitudes directas entre características, se mide el ángulo entre dos vectores que las representan. 
 Si el ángulo es pequeño (coseno cercano a 1), los elementos son muy similares; si el ángulo es grande (coseno cercano a 0), los elementos son menos similares.
-  </p>
+
   
 

@@ -88,7 +88,7 @@ El Dashboard completo en formato pdf se encuentra en la carpeta [Dashboard](Dash
 
 ## :white_check_mark: ```Resultados y Conclusiones```
 
-Nuestro trabajo permite al cliente explorar y analizar los negocios en los 4 estados de Estados Unidos. Específicamente el sistema de recomendación desarrollado ha sido basado en reseñas de usuario, y realiza un análisis de sentimiento basado utilizando la librería VADER, se calculan los puntajes de sentimiento y se  clasifican los negocios según las mejores y peores reseñas. Esto permite identificar tanto los negocios con opiniones más positivas como aquellos que tienen reseñas negativas.
+Nuestro trabajo le da la posibilidad al cliente explorar y analizar los negocios en los 4 estados de Estados Unidos. Específicamente el sistema de recomendación desarrollado ha sido basado en reseñas de usuario, y realiza un análisis de sentimiento basado utilizando la librería VADER, se calculan los puntajes de sentimiento y se  clasifican los negocios según las mejores y peores reseñas. Esto permite identificar tanto los negocios con opiniones más positivas como aquellos que tienen reseñas negativas.
 
 En el sistema se destacan los 5 mejores y 5 peores negocios según el análisis de sentimiento. Los mejores negocios se marcan en verde y los peores en rojo. Además, los 5 peores negocios tienen un círculo azul de 500 metros alrededor para indicar su área de influencia. Además se genera una visualización en forma de nube de palabras para los comentarios tipo "tip" positivos y negativos de los negocios. Las nubes de palabras usan una paleta verde para los comentarios positivos y una roja para los negativos. Esto ayuda a identificar patrones comunes y palabras clave que aparecen en las reseñas de los usuarios.
 
