@@ -48,7 +48,8 @@ Nuestro objetivo es proporcionar insights valiosos mediante el cruce de reseñas
 
 - Sprint Nro 2: En esta etapa de Data Engineering se trabajó en forma exhaustiva en la plataforma de Google Cloud, se generaron los buckes necesarios para el almacenamiento de los datos así como la función para las transformaciones correspondientes.
 
-- Sprint Nro 3:
+- Sprint Nro 3: Se crearon modelos de Machine Learning, el despliegue del Sistema de Recomendación de Negocios a través de Streamlit y la implementación del Dashboard Interactivo.
+
 
 
 ## 🏆 Indicadores Claves de Rendimiento (KPIs)
