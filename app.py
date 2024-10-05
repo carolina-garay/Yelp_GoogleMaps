@@ -193,15 +193,15 @@ def mostrar_recomendacion():
                 st.pyplot(plt)
 
                 #Enviar las sugerencias de los usuarios a GPT-4 para generar recomendaciones
-                prompt = f"""
-                Sugerencias de los usuarios:
-                Mejores negocios:
-                {mejores_tips}
+                #prompt = f"""
+                #Sugerencias de los usuarios:
+                #Mejores negocios:
+                #{mejores_tips}
 
-                Peores negocios:
-                {peores_tips}
+                #Peores negocios:
+                #{peores_tips}
 
-                Basado en estas sugerencias, por favor recomienda un plan de acción de 3 ítems bien resumidos para mejorar o implementar un nuevo negocio.
+                #Basado en estas sugerencias, por favor recomienda un plan de acción de 3 ítems bien resumidos para mejorar o implementar un nuevo negocio.
                 """
 
                 # Llamar a OpenAI GPT-4 para generar recomendaciones
@@ -226,7 +226,7 @@ def mostrar_recomendacion():
                     st.error(f"Error en la solicitud: {str(e)}")
 
                 except Exception as e:
-                    st.error(f"Ocurrió un error inesperado: {str(e)}")
+                    st.error(f"Ocurrió un error inesperado: {str(e)}")"""
 
 # Renderizar la página seleccionada
 if pagina == "Dashboard de Power BI":
