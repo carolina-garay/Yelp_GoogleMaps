@@ -6,7 +6,6 @@
 
 
 ## YELP & GOOGLE MAPS - REVIEWS AND RECOMMENDATIONS
-
 ![LOGO3](imagenes/startech.png)
 
 
